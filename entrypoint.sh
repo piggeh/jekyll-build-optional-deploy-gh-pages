@@ -78,7 +78,7 @@ if [ -n "$DELETE_BEFORE_BUILD" ]; then
 fi
 
 echo '[!] - Building '
-bundle exec jekyll build
+JEKYLL_ENV=production bundle exec jekyll build
 
 
 if [ "$DEPLOY_SITE" = true ]; then	
